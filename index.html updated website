@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Interior Captions | We Elevate Spaces</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -24,6 +24,7 @@ background:var(--cream);
 color:var(--black);
 }
 
+/* HEADER */
 header{
 display:flex;
 justify-content:space-between;
@@ -42,18 +43,13 @@ color:var(--gold);
 font-size:22px;
 }
 
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:500;
-}
-
+/* HERO */
 .hero{
 height:90vh;
 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');
 background-size:cover;
+background-position:center;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -82,6 +78,7 @@ border-radius:5px;
 font-weight:bold;
 }
 
+/* SECTIONS */
 section{
 padding:70px 10%;
 }
@@ -89,10 +86,10 @@ padding:70px 10%;
 h2{
 color:var(--navy);
 font-family:Montserrat;
-font-size:2rem;
 margin-bottom:20px;
 }
 
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -106,13 +103,7 @@ border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-.portfolio img{
-width:100%;
-border-radius:10px;
-height:200px;
-object-fit:cover;
-}
-
+/* CONTACT */
 .contact{
 background:var(--navy);
 color:white;
@@ -122,6 +113,7 @@ color:white;
 color:white;
 }
 
+/* FOOTER */
 footer{
 text-align:center;
 padding:20px;
@@ -129,6 +121,7 @@ background:#0a1a2b;
 color:white;
 }
 
+/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -149,13 +142,9 @@ text-decoration:none;
 
 <header>
 <div class="logo">INTERIOR CAPTIONS</div>
-<nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#contact">Contact</a>
-</nav>
 </header>
+
+<!-- HERO -->
 
 <div class="hero">
 <div>
@@ -165,17 +154,21 @@ text-decoration:none;
 </div>
 </div>
 
-<section id="about">
+<!-- ABOUT -->
+
+<section>
 <h2>About Us</h2>
 <p>
-Interior Captions is a modern interior design company based in Kampala, Uganda,
-specializing in residential, commercial, and hospitality interiors.
-We turn spaces into functional, elegant environments.
+Interior Captions is a modern interior design company based in Kampala, Uganda.
+We specialize in residential, commercial, and hospitality interiors that combine beauty and functionality.
 </p>
 </section>
 
-<section id="services">
+<!-- SERVICES -->
+
+<section>
 <h2>Our Services</h2>
+
 <div class="grid">
 <div class="card">Interior Design</div>
 <div class="card">3D Visualization</div>
@@ -184,16 +177,23 @@ We turn spaces into functional, elegant environments.
 <div class="card">Furniture Design</div>
 <div class="card">Fit-Out Works</div>
 </div>
+
 </section>
 
-<section id="portfolio">
+<!-- PORTFOLIO -->
+
+<section>
 <h2>Portfolio</h2>
-<div class="grid portfolio">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
-<img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36">
-<img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6">
+
+<div class="grid">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" style="width:100%;border-radius:10px;">
+<img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" style="width:100%;border-radius:10px;">
+<img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6" style="width:100%;border-radius:10px;">
 </div>
+
 </section>
+
+<!-- CONTACT -->
 
 <section id="contact" class="contact">
 <h2>Contact Us</h2>
@@ -201,13 +201,17 @@ We turn spaces into functional, elegant environments.
 <p>0753970113 | 0765354096 | 0702389140</p>
 <p>interiorcaps@gmail.com</p>
 <p>Namasuba, Entebbe Road</p>
-
 <p><strong>CEOs:</strong> Elly & Donald</p>
+
 </section>
+
+<!-- FOOTER -->
 
 <footer>
 © 2026 Interior Captions | We Elevate Spaces
 </footer>
+
+<!-- WHATSAPP -->
 
 <a class="whatsapp" href="https://wa.me/256753970113">💬</a>
 
